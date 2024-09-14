@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
 
       title: 'Flutter Demo',
-      initialRoute: '/home',
+      initialRoute: '/prodec',
      theme: aapligetThem,
       onGenerateRoute: RoutManger.approute,
     );
