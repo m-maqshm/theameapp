@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:theam/core/views/compons/app_drower.dart';
 import 'package:theam/core/views/sreane/prodectScreane.dart';
 import 'package:theam/core/views/sreane/tabProdectScrean.dart';
 
@@ -24,6 +25,7 @@ class _LaodeProdectsState extends State<LaodeProdects> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: AppDrawer(),
         appBar: AppBar(
           title: Text('Prdects'),
         ),

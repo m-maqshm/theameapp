@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:theam/core/views/sreane/home_scrien.dart';
 import 'package:theam/core/views/sreane/login_Screane.dart';
 import 'package:theam/core/views/sreane/notFounePage.dart';
+import 'package:theam/core/views/sreane/splash_screne.dart';
 
 import '../core/views/sreane/loadeProdects.dart';
 import '../core/views/sreane/prodectScreane.dart';
@@ -13,6 +14,8 @@ class RoutManger{
       case
         '/home': return MaterialPageRoute(builder: (context) => HomeScrean(),);
       case'/prodec': return MaterialPageRoute(builder: (context) => LaodeProdects(),);
+      case '/splash':return MaterialPageRoute(builder: (ctx)=>SplashScreen());
+
       case'/login': return MaterialPageRoute(builder: (context) => LoginScreen(),);
       default: return MaterialPageRoute(builder: (context) => NotFoundPage(),);
     }

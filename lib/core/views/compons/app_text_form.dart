@@ -7,6 +7,7 @@ TextEditingController? controller;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      controller: controller,
       decoration: InputDecoration(
         hintText: hint,
         label: label!=null?Text(label!):null,

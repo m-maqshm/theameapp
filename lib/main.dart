@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get_storage/get_storage.dart';
 
 import 'core/thems/ligteTheam.dart';
 import 'helper/roate_maneger.dart';
 
-void main() {
+Future<void> main() async {
+  await GetStorage.init();
   runApp(const MyApp());
 }
 
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
 
       title: 'Flutter Demo',
-      initialRoute: '/login',
+      initialRoute: '/splash',
      theme: aapligetThem,
       onGenerateRoute: RoutManger.approute,
     );

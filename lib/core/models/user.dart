@@ -48,8 +48,8 @@ class User {
     return data;
   }
 
-  Map<String,String> authData(){
-    Map<String,String> loginInfo=Map();
+  Map<String,dynamic> authData(){
+    Map<String,dynamic> loginInfo=Map();
     loginInfo["username"]=username!;
     loginInfo["password"]=password!;
     return loginInfo;
