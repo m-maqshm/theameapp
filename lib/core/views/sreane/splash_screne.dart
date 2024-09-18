@@ -33,8 +33,7 @@ class _SplashScreenState extends State<SplashScreen> {
       sHelper.readKey("token")==null?
       Navigator.pushNamedAndRemoveUntil(context, "/login",(route)=>false)
           :
-      Navigator.pushNamedAndRemoveUntil(context, "/prodec/"
-          "/'/'",(route)=>false);
+      Navigator.pushNamedAndRemoveUntil(context, "/prodec",(route)=>false);
     });
   }
 }
